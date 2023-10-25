@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Favorite gallery images from Art Institute of Chicago that use AIC API to fetch data for images"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="main.css">
+<script src="main.js" defer></script>
+<title>Chicago Art Institute | My Favorite Artwork</title>
+</head>
+<body>
+    <div class="container mt-4 pt-4 mb-5 text-center text-white text-uppercase">
+        <h1 class="display-1">Chicago Art Institute</h1>
+        <hr id="header-hr"><br>
+        <h6 class="display-6">My Favorite Artwork</h6>
+    </div>
+    <div class="gallery container mt-4 pt-4 text-white text-center">
+<!--Gallery Image 1-->
+        <div class="row mt-4 pt-5 mb-5 pb-5">
+            <div class="col-md-6">
+                <img src="images/starrynightandtheastronauts.jpg" data-id="129884" class="img-fluid gallery_img gallery_item-1" id="img1">
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <h1>Starry Night and The Astronauts</h1>
+            </div>
+        </div>
+        <div id="img1Info" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="modal-caption"></p>
+            </div>
+        </div>
+    <br><hr class="reg-hr"><br>
+<!--Gallery Image 2-->
+        <div class="row mt-5 pt-5 mb-5 pb-5">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <h1>Blue and Green Music</h1>
+            </div>
+            <div class="col-md-6">
+                <img src="images/blueandgreenmusic.jpg" data-id="24306" class="img-fluid gallery_item-2" id="img2">
+            </div>
+        </div>
+        <div id="img2Info" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="modal-caption"></p>
+            </div>
+        </div>
+    <br><hr class="reg-hr"><br>
+<!--Gallery Image 3-->
+        <div class="row mt-5 pt-5 mb-5 pb-5">
+            <div class="col-md-6">
+                <img src="images/thegreatwave.jpg" data-id="24645" class="img-fluid gallery_img gallery_item-3" id="img3">
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <h1>The Great Wave</h1>
+            </div>
+        </div>
+        <div id="img3Info" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="modal-caption"></p>
+            </div>
+        </div>
+    <br><hr class="reg-hr"><br>
+<!--Gallery Image 4-->
+        <div class="row mt-5 pt-5 mb-5 pb-5">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <h1>Distant View of Niagara Falls</h1>
+            </div>
+            <div class="col-md-6">
+                <img src="images/distantviewofniagarafalls.jpg" data-id="90048" class="img-fluid gallery_img gallery_item-4" id="img4">
+            </div>
+        </div>
+        <div id="img4Info" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="modal-caption"></p>
+            </div>
+        </div>
+    <br><hr class="reg-hr"><br>
+<!--Gallery Image 5-->
+        <div class="row mt-5 pt-5 mb-5 pb-5">
+            <div class="col-md-6">
+                <img src="images/thesheltonwithsunspotsny.jpg" data-id="104031" class="img-fluid gallery_img gallery_item-5" id="img5">
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <h1>The Shelton with Sunspots, N.Y.</h1>
+            </div>
+        </div>
+        <div id="img5Info" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="modal-caption"></p>
+            </div>
+        </div>
+    <br><hr class="reg-hr"><br>
+<!--Gallery Image 6-->
+        <div class="row mt-5 pt-5 mb-5 pb-5">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <h1>The Artist Looks at Nature</h1>
+            </div>
+            <div class="col-md-6">
+                <img src="images/theartistlooksatnature.jpg" data-id="49714" class="img-fluid gallery_img gallery_item-6" id="img6">
+            </div>
+        </div>
+        <div id="img6Info" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="modal-caption"></p>
+            </div>
+        </div>
+    <br><hr class="reg-hr"><br>
+<!--Gallery Image 7-->
+        <div class="row mt-5 pt-5 mb-5 pb-5">
+            <div class="col-md-6">
+                <img src="images/earlymorningtarponsprings.jpg" data-id="64729" class="img-fluid gallery_img gallery_item-7" id="img7">
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <h1>Early Morning, Tarpon Springs</h1>
+            </div>
+        </div>
+        <div id="img7Info" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="modal-caption"></p>
+            </div>
+        </div>
+    <br><hr class="reg-hr"><br>
+<!--Gallery Image 8-->
+        <div class="row mt-5 pt-5 mb-5 pb-5">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <h1>The Creation of Adam</h1>
+            </div>
+            <div class="col-md-6">
+                <img src="images/thecreationofadam.jpg" data-id="105073" class="img-fluid gallery_item gallery_item-8" id="img8">
+            </div>
+        </div>
+        <div id="img8Info" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="modal-caption"></p>
+            </div>
+        </div>
+    <br><hr class="reg-hr"><br>
+    </div>
+    <div class="container text-center text-white mt-3 pt-3 mb-3 pb-3">
+        <h5 class="fw-light">&copy; 2023 Chicago Gallery API. Created by Brandon Miller.</h5>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<div class="spinner"></div>
+</body>
+</html>

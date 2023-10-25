@@ -1,0 +1,120 @@
+body {
+    background-color: darkslategray;
+}
+
+.display-1, h1, h5, h6 {
+    font-family: 'Herculanum', Arial, Helvetica, sans-serif;
+}
+
+img {
+    border: 8px solid white;
+    transform: scale(1);
+    box-shadow: 0 darkslategray;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.reg-hr, #header-hr {
+    overflow: visible;
+    border: 0;
+    width: 75%;
+    margin: auto;
+    opacity: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, darkslategray, rgba(255, 255, 255, 0.75), darkslategray);
+}
+
+#modal-hr {
+    overflow: visible;
+    border: 0;
+    width: 75%;
+    margin: auto;
+    opacity: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, white, rgba(47, 79, 79, 0.75), white);
+}
+
+.reg-hr::after {
+    content: "\2042";
+    position: relative;
+    top: -0.8em;
+    font-size: 1.25em;
+    padding: 0 0.25em;
+    background: darkslategray;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal-content {
+    position: relative;
+    color: darkslategray;
+    font-family: Verdana, sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: gray;
+    float: right;
+    font-size: 28px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: darkslategray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-top: 4px solid white;
+    width: 40px;
+    height: 40px;
+    animation: fadeIn 0.25s forwards, spin 0.5s linear infinite;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* .no-scroll {
+    overflow: hidden;
+    height: 100%;
+} */
